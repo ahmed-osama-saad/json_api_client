@@ -15,13 +15,6 @@ This library is inspired by [Coloquent](https://github.com/DavidDuwaer/Coloquent
 - **Authentication Support**: Multiple authentication methods including token, Google, and Apple Sign-In
 - **Customizable Requests**: Set headers, query parameters, and more
 
-## Installation
-
-```yaml
-dependencies:
-  json_api_client: ^latest_version
-```
-
 ## Getting Started
 
 ### Initialize the Client
