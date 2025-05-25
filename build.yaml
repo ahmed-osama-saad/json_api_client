@@ -1,0 +1,14 @@
+targets:
+  $default:
+    builders:
+      json_api_client|query_generator:
+        enabled: true
+
+builders:
+  query_generator:
+    import: "package:json_api_client/src/builder/query_generator.dart"
+    builder_factories: ["queryBuilder"]
+    build_extensions: { ".dart": [".query.g.part"] }
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen|combining_builder"]
